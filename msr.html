@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <table align="center" class="list" id="studentList">
+                <thead>
+                    <tr>
+                        <th>I D</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Class</th>
+                        <th>Year</th>
+                        <th>City</th>
+                        <th>Contry</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+            <br/>
+    <table align="center">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                                <label>I D</label>
+                                <br/>
+                                <input type="text" name="studentID" id="studentID">
+                            </div>
+                    <div>
+                        <label>Name*</label><label class="validation-error hide" id="studentNameValidationError">This field is required.</label>
+                       <br/>
+                        <input type="text" name="studentName" id="studentName">
+                    </div>
+                    <div>
+                            <label>Email</label><br/>
+                            <input type="text" name="email" id="email">
+                        </div>
+                    
+                    <div>
+                        <label>Class</label><br/>
+                        <input type="text" name="calss" id="class">
+                    </div>
+                    <div>
+                            <label>Year</label><br/>
+                            <input type="text" name="year" id="year">
+                        </div>
+                    <div>
+                        <label>City</label><br/>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                            <label>Contry</label><br/>
+                            <input type="text" name="contry" id="city">
+                        </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+           
+            
+        </tr>
+    </table>
+  <br/>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
